@@ -2,14 +2,14 @@ matplotlib
 numpy
 scipy
 opencv-python
-tensorflow>=2.6.0
-# tensorflow-gpu>=2.6.0
+# tensorflow==2.4.0
+tensorflow-gpu==2.4.0
 tqdm
 
 ## uncomment the following dependencies for generating tfrecords
 ## or using notebooks
 # pycocotools
-# trimesh
+trimesh
 # networkx
-# pyglet
+pyglet<2
 
