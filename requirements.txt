@@ -1,9 +1,11 @@
-matplotlib
-numpy
+matplotlib==3.6.3
+numpy==1.19.5
 scipy
 opencv-python
-# tensorflow==2.4.0
-tensorflow-gpu==2.4.0
+# tensorflow==2.4.1
+tensorflow-gpu==2.4.1
+tensorboard==2.11.2
+protobuf==3.20
 tqdm
 
 ## uncomment the following dependencies for generating tfrecords
@@ -11,5 +13,5 @@ tqdm
 # pycocotools
 trimesh
 # networkx
-pyglet<2
+pyglet==1.5.27
 
