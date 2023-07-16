@@ -176,6 +176,13 @@ def visualize(renderer, img, params, verts, cam, joints):
     img_mesh_rot1 = renderer.rotated(vert_shifted, 60, img_size=img.shape[:2])
     img_mesh_rot2 = renderer.rotated(vert_shifted, -60, img_size=img.shape[:2])
 
+    cv2.imwrite('output/image.jpg', img)
+    cv2.imwrite('output/2D_Joint.jpg', img_kp2d)
+    cv2.imwrite('output/3D_Mesh_Overlay.jpg', img_overlay)
+    cv2.imwrite('output/3D_Mesh.jpg', img_mesh)
+    cv2.imwrite('output/rotated_60.jpg', img_mesh_rot1)
+    cv2.imwrite('output/rotated__60.jpg', img_mesh_rot2)
+
     gs = gridspec.GridSpec(2, 3)
     gs.update(wspace=0.25, hspace=0.25)
     plot.axis('off')
