@@ -15,4 +15,5 @@ trimesh
 # networkx
 pyglet==1.5.27
 pyvirtualdisplay
+#ipykernel
 
